@@ -7,8 +7,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'desafios/**/index.html'),
-      },
-    },
-  },
+        nested: resolve(__dirname, 'desafios/product-card/index.html')
+      }
+    }
+  }
 })
