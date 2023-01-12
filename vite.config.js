@@ -7,14 +7,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(
-          __dirname,
-          'desafios/player/index.html',
-          'desafios/teste3/index.html',
-          'desafios/product-card/index.html'
-        )
-        // nested: resolve(__dirname, 'desafios/teste3/index.html'),
-        // nested: resolve(__dirname, 'desafios/product-card/index.html')
+        player: resolve(__dirname, 'desafios/player/index.html'),
+        teste3: resolve(__dirname, 'desafios/teste3/index.html'),
+        productCard: resolve(__dirname, 'desafios/product-card/index.html')
       }
     }
   }
