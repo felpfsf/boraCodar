@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="/src/js/main_style.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Desafio #02 - Card de produto</title>
+  </head>
+  <body class="p-4">
+    <div
+      class="h-[498px] max-w-4xl mx-auto mt-[10%] bg-[#D9CDF7] flex flex-col lg:flex-row items-center justify-center gap-12 p-4 rounded-3xl"
+    >
+      <div class="relative h-64 max-w-[450px]">
+        <button
+          class="absolute flex items-center justify-center w-8 h-6 right-4"
+        >
+          <img id="button-image" src="public/images/360-vector.png" alt="" />
+        </button>
+        <image
+          id="product-image"
+          src="public/images/couch-static.png"
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="flex-1 text-purple-900">
+        <div class="flex flex-col gap-y-3">
+          <h3 class="text-xs font-light">CÓDIGO: 42404</h3>
+          <h1 class="text-3xl font-semibold">Sofá Margot II - Rosé</h1>
+          <h2 class="font-normal">R$ 4.000</h2>
+        </div>
+        <button
+          class="px-4 py-2 mt-5 transition-colors duration-300 ease-in-out border border-purple-900 rounded-full hover:bg-purple-900 hover:text-neutral-100"
+        >
+          Adicionar à cesta
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
