@@ -53,4 +53,4 @@ const listDesafios = desafios.map(desafio => {
   `
 })
 
-cardGrid.innerHTML = listDesafios.join('')
+cardGrid.innerHTML = listDesafios.join('\n')
