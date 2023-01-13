@@ -2,7 +2,7 @@
   "desafios": [
     {
       "id": 2,
-      "bannerUrl": "docs/images/desafio-product-card-banner.jpg",
+      "bannerUrl": "../../docs/images/desafio-product-card-banner.jpg",
       "subtitle": "Desafio #2",
       "title": "Card de produto",
       "description": "Card desenvolvido seguindo as regras de ao clicar no botão 360° troca a imagem estática por uma animação do produto em 360 graus.",
