@@ -4,15 +4,152 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script defer type="module" src="src/js/main_style.js"></script>
+    <title>#BoraCodar - Desafios Rocketseat</title>
   </head>
-  <body>
-    <div>
-      <h1>hello</h1>
-      <a href="/desafios/player/index.html">Semana 1</a>
-      <a href="/desafios/product-card/index.html">Semana 2</a>
-      <a href="/desafios/teste3/index.html">Semana 3</a>
+  <body class="bg-mytheme-base100 mb-44">
+    <header>
+      <div
+        class="container mx-auto flex flex-wrap p-4 items-center justify-center"
+      >
+        <h1 class="font-bold text-5xl text-mytheme-text">#boraCodar</h1>
+      </div>
+    </header>
+    <div class="max-w-[1440px] m-auto p-2">
+      <div class="w-[60%] mx-auto text-center">
+        <h2>
+          Todas as quarta-feiras é lançado um desafio inédito na página oficial
+          do
+          <a
+            href="https://rseat.in/boracodar!"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-semibold text-mytheme-primary border-b border-b-mytheme-primary hover:text-mytheme-info hover:border-b-mytheme-info transition-colors duration-300 ease-in-out"
+          >
+            #boraCodar</a
+          >, faça da sua maneira e na próxima semana é lançado um novo vídeo com
+          a resolução do desafio.
+        </h2>
+        <h2>E aí, #boraCodar?</h2>
+      </div>
+
+      <div
+        id="card-grid"
+        class="flex justify-center flex-wrap xl:grid xl:grid-cols-4 place-items-center -m-4 mt-4 border-t"
+      >
+        <!-- Card -->
+        <!-- <div class="w-[328px] p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img
+              class="h-40 rounded w-full object-cover object-center mb-6"
+              src="docs/images/desafio-product-card-banner.jpg"
+              alt="content"
+            />
+            <h3
+              class="tracking-widest text-mytheme-info text-xs font-medium uppercase"
+            >
+              Desafio #2
+            </h3>
+            <h2 class="text-lg text-white font-medium mb-4">Card de produto</h2>
+            <p class="leading-relaxed text-base">
+              Card desenvolvido seguindo as regras de ao clicar no botão 360°
+              troca a imagem estática por uma animação do produto em 360 graus.
+            </p>
+            <div class="flex justify-end">
+              <a
+                href="/desafios/product-card/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center font-semibold text-mytheme-primary transition-colors duration-300 ease-in-out"
+              >
+                <span
+                  class="border-b border-b-transparent hover:border-b-mytheme-info hover:text-mytheme-info transition-all duration-300 ease-in-out"
+                >
+                  Veja mais
+                </span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Fim -->
+      </div>
     </div>
-    <script type="module" src="src/js/main_style.js"></script>
+    <footer class="text-gray-400 w-full fixed bottom-0 bg-mytheme-base100">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a href="" target="_blank">
+          <img src="/images/logo.webp" alt="" />
+        </a>
+        <p
+          class="text-base text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          Desafio
+          <span class="text-mytheme-text text-lg font-semibold">
+            #boraCodar
+          </span>
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            href="https://github.com/felpfsf"
+            class="ml-3 text-gray-400"
+            target="_blank"
+          >
+            <img
+              src="/images/icons8-github.svg"
+              alt="github logo"
+              class="w-5 h-5"
+            />
+          </a>
+          <a
+            href="https://twitter.com/felpfsf_dev"
+            class="ml-3 text-gray-400"
+            target="_blank"
+          >
+            <img
+              src="/images/icons8-twitter.svg"
+              alt="twitter logo"
+              class="w-5 h-5"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/fs.ferreira/"
+            class="ml-3 text-gray-400"
+            target="_blank"
+          >
+            <img
+              src="/images/icons8-instagram.svg"
+              alt="instagram logo"
+              class="w-5 h-5"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/felipefsf/"
+            class="ml-3 text-gray-400"
+            target="_blank"
+          >
+            <img
+              src="/images/icons8-linkedin.svg"
+              alt="linkedin logo"
+              class="w-5 h-5"
+            />
+          </a>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
