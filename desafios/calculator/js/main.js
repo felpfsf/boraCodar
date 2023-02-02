@@ -25,6 +25,10 @@ function calculate() {
   }
 }
 
+function percetage() {
+  resultEl.innerHTML = eval(operationEl.innerHTML)
+}
+
 function reset() {
   prevValue = ''
   operationEl.innerHTML = ''
@@ -37,6 +41,22 @@ function clearEntry() {
     0,
     operationEl.innerHTML.length - 1
   )
+}
+
+function convertEntry() {
+  let prevValue = operationEl.innerHTML
+  let currentValue = prevValue.split(' ').pop()
+  if (Number.isInteger(parseFloat(currentValue))) {
+    operationEl.innerHTML =
+      prevValue.slice(0, prevValue.length - currentValue.length) + -currentValue
+  }
+}
+
+function handlePercent() {
+  prevValue = operationEl.innerHTML
+  let num = parseFloat(operationEl.innerHTML.split(' ').pop()) / 100
+  operationEl.innerHTML =
+    operationEl.innerHTML.slice(0, -(String(num).length + 1)) + num
 }
 
 keys.addEventListener('click', e => {
@@ -57,6 +77,9 @@ keys.addEventListener('click', e => {
     case '=':
       calculate()
       break
+    // case '%':
+    //   handlePercent()
+    //   break
     case '.':
       inputDigit('.')
       break
@@ -65,6 +88,9 @@ keys.addEventListener('click', e => {
       break
     case 'all-clear':
       reset()
+      break
+    case 'positive-negative':
+      convertEntry()
       break
     default:
       if (Number.isInteger(parseFloat(value))) {
