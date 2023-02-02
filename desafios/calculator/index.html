@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="/src/js/main_style.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
+    <title>Desafio #04 - Calculadora</title>
+  </head>
+  <body class="bg-gradient-to-b from-[#807ECE] to-[#8E7ECE] font-rubik">
+    <div class="w-full h-screen m-auto flex items-center justify-center">
+      <div
+        class="w-[356px] h-[566px] bg-[#2D2A37] rounded-[48px] shadow-2xl flex flex-col items-center p-8"
+      >
+        <div class="mt-[22px] w-72 h-[86px] flex flex-col items-end">
+          <div class="text-xl text-[#6B6B6B]" id="operands"></div>
+          <div class="w-full flex justify-between">
+            <span class="text-4xl text-[#6B6B6B]">=</span>
+            <span class="text-4xl text-[#EBEBEB]" id="result"></span>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-4 grid-rows-5 text-2xl gap-3 calculator-keys"
+        >
+          <!-- 1st row -->
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#975DFA] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="clear-entry"
+          >
+            CE
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="all-clear"
+          >
+            C
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="1"
+          >
+            %
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#462878] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradVioletPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="/"
+          >
+            ÷
+          </button>
+          <!-- 1st row -->
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="7"
+          >
+            7
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="8"
+          >
+            8
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="9"
+          >
+            9
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#462878] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradVioletPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="*"
+          >
+            X
+          </button>
+          <!-- 1st row -->
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="5"
+          >
+            5
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="6"
+          >
+            6
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#462878] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradVioletPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="-"
+          >
+            -
+          </button>
+          <!-- 1st row -->
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="1"
+          >
+            1
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="3"
+          >
+            3
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#462878] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradVioletPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="+"
+          >
+            +
+          </button>
+          <!-- 1st row -->
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="positive-negative"
+          >
+            +/-
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="0"
+          >
+            0
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#2D2A37] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="."
+          >
+            ,
+          </button>
+          <button
+            class="w-16 h-16 rounded-full bg-[#462878] bg-buttonGrad shadow-customBoxShadow flex items-center justify-center text-[#EBEBEB] active:bg-buttonGradVioletPressed active:border-[1.5px] active:border-white/20 cursor-pointer select-none"
+            value="="
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
