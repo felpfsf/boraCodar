@@ -6,7 +6,7 @@ const desafios = data.desafios
 const listDesafios = desafios.map(desafio => {
   return `
   <div class="w-[328px] p-4">
-    <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+    <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg h-[447px]">
       <img
         class="h-40 rounded w-full object-cover object-center mb-6"
         src=${desafio.bannerUrl}

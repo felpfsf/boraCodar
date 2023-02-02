@@ -7,6 +7,14 @@
       "title": "Card de produto",
       "description": "Card desenvolvido seguindo as regras de ao clicar no botão 360° troca a imagem estática por uma animação do produto em 360 graus.",
       "urlTo": "/desafios/product-card/index.html"
+    },
+    {
+      "id": 4,
+      "bannerUrl": "images/projects-banners/calculator_banner.png",
+      "subtitle": "Desafio #4",
+      "title": "Calculadora",
+      "description": "Calculadora simples utilizando vanilla JS com possibilidade de utilizar o teclado e fazer operações sequenciais. Teste já",
+      "urlTo": "/desafios/calculator/index.html"
     }
   ]
 }
